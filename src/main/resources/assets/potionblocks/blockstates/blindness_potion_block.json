@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "potionblocks:block/blindness_potion_block"
+    }
+  }
+}

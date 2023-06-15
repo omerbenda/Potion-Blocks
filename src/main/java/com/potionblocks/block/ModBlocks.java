@@ -31,6 +31,9 @@ public class ModBlocks {
   public static final RegistryObject<PotionBlock> REGEN_POTION_BLOCK =
       registerBlock("regen_potion_block", () -> new PotionBlock(MobEffects.REGENERATION, 900, 0));
 
+  public static final RegistryObject<PotionBlock> BLINDNESS_POTION_BLOCK =
+          registerBlock("blindness_potion_block", () -> new PotionBlock(MobEffects.BLINDNESS, 450, 0));
+
   private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
     RegistryObject<T> toReturn = BLOCKS.register(name, block);
     registerBlockItem(name, toReturn);

@@ -40,6 +40,7 @@ public class PotionBlocks {
       event.accept(ModBlocks.SLOWNESS_POTION_BLOCK);
       event.accept(ModBlocks.POISON_POTION_BLOCK);
       event.accept(ModBlocks.REGEN_POTION_BLOCK);
+      event.accept(ModBlocks.BLINDNESS_POTION_BLOCK);
     }
   }
 
