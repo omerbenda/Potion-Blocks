@@ -23,7 +23,8 @@ public class ModBlocks {
           "speed_potion_block", () -> new PotionBlock(MobEffects.MOVEMENT_SPEED, 3000, 0));
 
   public static final RegistryObject<PotionBlock> SLOWNESS_POTION_BLOCK =
-      registerBlock("slowness_potion_block", () -> new PotionBlock(MobEffects.MOVEMENT_SLOWDOWN, 1600, 0));
+      registerBlock(
+          "slowness_potion_block", () -> new PotionBlock(MobEffects.MOVEMENT_SLOWDOWN, 1600, 0));
 
   public static final RegistryObject<PotionBlock> POISON_POTION_BLOCK =
       registerBlock("poison_potion_block", () -> new PotionBlock(MobEffects.POISON, 600, 0));
@@ -32,10 +33,10 @@ public class ModBlocks {
       registerBlock("regen_potion_block", () -> new PotionBlock(MobEffects.REGENERATION, 900, 0));
 
   public static final RegistryObject<PotionBlock> BLINDNESS_POTION_BLOCK =
-          registerBlock("blindness_potion_block", () -> new PotionBlock(MobEffects.BLINDNESS, 450, 0));
+      registerBlock("blindness_potion_block", () -> new PotionBlock(MobEffects.BLINDNESS, 450, 0));
 
   public static final RegistryObject<PotionBlock> JUMP_POTION_BLOCK =
-          registerBlock("jump_potion_block", () -> new PotionBlock(MobEffects.JUMP, 600, 0));
+      registerBlock("jump_potion_block", () -> new PotionBlock(MobEffects.JUMP, 600, 0));
 
   private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
     RegistryObject<T> toReturn = BLOCKS.register(name, block);
