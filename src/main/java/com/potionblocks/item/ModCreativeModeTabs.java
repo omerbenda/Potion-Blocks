@@ -12,10 +12,10 @@ import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(modid = PotionBlocks.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModCreativeModeTabs {
-    public static CreativeModeTab POTION_BLOCKS_TAB;
+  public static CreativeModeTab POTION_BLOCKS_TAB;
 
-    @SubscribeEvent
-    public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event) {
+  @SubscribeEvent
+  public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event) {
     POTION_BLOCKS_TAB =
         event.registerCreativeModeTab(
             new ResourceLocation(PotionBlocks.MOD_ID, "potion_blocks_tab"),
@@ -23,5 +23,5 @@ public class ModCreativeModeTabs {
                 builder
                     .icon(() -> new ItemStack(ModBlocks.SPEED_POTION_BLOCK.get()))
                     .title(Component.translatable("creativemodetab.potion_blocks_tab")));
-    }
+  }
 }
