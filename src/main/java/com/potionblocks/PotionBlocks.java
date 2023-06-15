@@ -3,6 +3,7 @@ package com.potionblocks;
 import com.mojang.logging.LogUtils;
 import com.potionblocks.block.ModBlocks;
 import com.potionblocks.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
@@ -33,7 +34,11 @@ public class PotionBlocks {
 
   private void commonSetup(final FMLCommonSetupEvent event) {}
 
-  private void addCreative(CreativeModeTabEvent.BuildContents event) {}
+  private void addCreative(CreativeModeTabEvent.BuildContents event) {
+    if (event.getTab() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+      event.accept(ModBlocks.SPEED_POTION_BLOCK);
+    }
+  }
 
   @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
   public static class ClientModEvents {
