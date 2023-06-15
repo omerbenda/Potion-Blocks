@@ -1,6 +1,5 @@
 package com.potionblocks.block.custom;
 
-import com.potionblocks.PotionBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
