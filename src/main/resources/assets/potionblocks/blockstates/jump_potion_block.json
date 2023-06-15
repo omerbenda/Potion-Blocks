@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "potionblocks:block/jump_potion_block"
+    }
+  }
+}
