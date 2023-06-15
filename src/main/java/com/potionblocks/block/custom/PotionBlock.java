@@ -1,6 +1,5 @@
 package com.potionblocks.block.custom;
 
-import com.potionblocks.PotionBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
@@ -10,15 +9,17 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.Material;
 
 public class PotionBlock extends Block {
   private MobEffect effect;
   private int duration;
   private int amplifier;
 
-  public PotionBlock(
-      BlockBehaviour.Properties blockProperties, MobEffect effect, int duration, int amplifier) {
-    super(blockProperties);
+  public PotionBlock(MobEffect effect, int duration, int amplifier) {
+    super(BlockBehaviour.Properties.of(Material.METAL)
+            .strength(6f)
+            .requiresCorrectToolForDrops());
     this.effect = effect;
     this.duration = duration;
     this.amplifier = amplifier;
@@ -29,6 +30,14 @@ public class PotionBlock extends Block {
     this.effect = effect;
     this.duration = duration;
     this.amplifier = 0;
+  }
+
+  public PotionBlock(
+          BlockBehaviour.Properties blockProperties, MobEffect effect, int duration, int amplifier) {
+    super(blockProperties);
+    this.effect = effect;
+    this.duration = duration;
+    this.amplifier = amplifier;
   }
 
   @Override

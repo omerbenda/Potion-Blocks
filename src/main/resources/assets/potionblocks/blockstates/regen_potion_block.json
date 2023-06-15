@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "potionblocks:block/regen_potion_block"
+    }
+  }
+}
