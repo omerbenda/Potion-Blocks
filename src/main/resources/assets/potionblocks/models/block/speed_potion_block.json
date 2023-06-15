@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "potionblocks:block/speed_potion_block"
+  }
+}
