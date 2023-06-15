@@ -29,7 +29,8 @@ public class ModBlocks {
                   BlockBehaviour.Properties.of(Material.METAL)
                       .strength(6f)
                       .requiresCorrectToolForDrops(),
-                  MobEffects.MOVEMENT_SPEED));
+                  MobEffects.MOVEMENT_SPEED,
+                  3000));
 
   private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
     RegistryObject<T> toReturn = BLOCKS.register(name, block);
