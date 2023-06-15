@@ -1,0 +1,10 @@
+{
+  "block.potionblocks.speed_potion_block": "Block Of Speed",
+  "block.potionblocks.slowness_potion_block": "Block Of Slowness",
+  "block.potionblocks.poison_potion_block": "Block Of Poison",
+  "block.potionblocks.regen_potion_block": "Block Of Regeneration",
+  "block.potionblocks.blindness_potion_block": "Block Of Blindness",
+  "block.potionblocks.jump_potion_block": "Block Of Jumping",
+
+  "creativemodetab.potion_blocks_tab": "Potion Blocks"
+}

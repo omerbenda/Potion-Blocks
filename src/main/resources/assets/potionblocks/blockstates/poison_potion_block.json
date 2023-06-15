@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "potionblocks:block/poison_potion_block"
+    }
+  }
+}
