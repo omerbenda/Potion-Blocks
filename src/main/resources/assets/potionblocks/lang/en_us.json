@@ -4,5 +4,7 @@
   "block.potionblocks.poison_potion_block": "Block Of Poison",
   "block.potionblocks.regen_potion_block": "Block Of Regeneration",
   "block.potionblocks.blindness_potion_block": "Block Of Blindness",
-  "block.potionblocks.jump_potion_block": "Block Of Jumping"
+  "block.potionblocks.jump_potion_block": "Block Of Jumping",
+
+  "creativemodetab.potion_blocks_tab": "Potion Blocks"
 }
