@@ -38,6 +38,7 @@ public class PotionBlocks {
     if (event.getTab() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
       event.accept(ModBlocks.SPEED_POTION_BLOCK);
       event.accept(ModBlocks.POISON_POTION_BLOCK);
+      event.accept(ModBlocks.REGEN_POTION_BLOCK);
     }
   }
 

@@ -1,4 +1,5 @@
 {
   "block.potionblocks.speed_potion_block": "Block Of Speed",
-  "block.potionblocks.poison_potion_block": "Block Of Poison"
+  "block.potionblocks.poison_potion_block": "Block Of Poison",
+  "block.potionblocks.regen_potion_block": "Block Of Regeneration"
 }
