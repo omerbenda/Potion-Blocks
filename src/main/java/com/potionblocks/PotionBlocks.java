@@ -37,6 +37,7 @@ public class PotionBlocks {
   private void addCreative(CreativeModeTabEvent.BuildContents event) {
     if (event.getTab() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
       event.accept(ModBlocks.SPEED_POTION_BLOCK);
+      event.accept(ModBlocks.SLOWNESS_POTION_BLOCK);
       event.accept(ModBlocks.POISON_POTION_BLOCK);
       event.accept(ModBlocks.REGEN_POTION_BLOCK);
     }

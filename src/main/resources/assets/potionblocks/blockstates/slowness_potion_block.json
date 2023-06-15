@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "potionblocks:block/slowness_potion_block"
+    }
+  }
+}
