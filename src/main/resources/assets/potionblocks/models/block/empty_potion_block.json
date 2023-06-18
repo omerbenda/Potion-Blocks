@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "potionblocks:block/empty_potion_block"
+  }
+}
