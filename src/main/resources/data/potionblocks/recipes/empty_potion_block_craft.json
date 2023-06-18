@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#O#",
+    "MRM",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:polished_diorite"
+    },
+    "O": {
+      "item": "minecraft:observer"
+    },
+    "M": {
+      "item": "minecraft:milk_bucket"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "potionblocks:empty_potion_block",
+    "count": 1
+  }
+}
