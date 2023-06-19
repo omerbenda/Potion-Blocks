@@ -17,9 +17,7 @@ public class PotionBlock extends Block {
   private int amplifier;
 
   public PotionBlock(MobEffect effect, int duration, int amplifier) {
-    super(BlockBehaviour.Properties.of(Material.METAL)
-            .strength(6f)
-            .requiresCorrectToolForDrops());
+    super(BlockBehaviour.Properties.of(Material.METAL).strength(6f).requiresCorrectToolForDrops());
     this.effect = effect;
     this.duration = duration;
     this.amplifier = amplifier;
@@ -33,7 +31,7 @@ public class PotionBlock extends Block {
   }
 
   public PotionBlock(
-          BlockBehaviour.Properties blockProperties, MobEffect effect, int duration, int amplifier) {
+      BlockBehaviour.Properties blockProperties, MobEffect effect, int duration, int amplifier) {
     super(blockProperties);
     this.effect = effect;
     this.duration = duration;
@@ -44,11 +42,9 @@ public class PotionBlock extends Block {
   public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
     super.stepOn(level, pos, state, entity);
 
-    if (!(entity instanceof LivingEntity)) {
+    if (level.isClientSide() || !(entity instanceof LivingEntity livingEntity)) {
       return;
     }
-
-    LivingEntity livingEntity = (LivingEntity) entity;
 
     livingEntity.addEffect(new MobEffectInstance(this.effect, this.duration, this.amplifier));
   }
