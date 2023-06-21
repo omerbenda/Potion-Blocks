@@ -1,4 +1,4 @@
-package com.potionblocks.item;
+package com.potionblocks.potion;
 
 import com.potionblocks.PotionBlocks;
 import net.minecraft.world.effect.MobEffectInstance;

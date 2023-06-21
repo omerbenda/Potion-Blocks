@@ -4,7 +4,7 @@ import com.mojang.logging.LogUtils;
 import com.potionblocks.block.ModBlocks;
 import com.potionblocks.item.ModCreativeModeTabs;
 import com.potionblocks.item.ModItems;
-import com.potionblocks.item.ModPotions;
+import com.potionblocks.potion.ModPotions;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
@@ -25,8 +25,8 @@ public class PotionBlocks {
     IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
     ModItems.register(modEventBus);
-    ModPotions.register(modEventBus);
     ModBlocks.register(modEventBus);
+    ModPotions.register(modEventBus);
 
     modEventBus.addListener(this::commonSetup);
     MinecraftForge.EVENT_BUS.register(this);
