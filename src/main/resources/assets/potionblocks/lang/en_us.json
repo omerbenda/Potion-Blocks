@@ -1,4 +1,8 @@
 {
+  "item.minecraft.potion.effect.blindness_potion": "Blindness Potion",
+  "item.minecraft.splash_potion.effect.blindness_potion": "Splash Potion of Blindness",
+  "item.minecraft.lingering_potion.effect.blindness_potion": "Lingering Potion of Blindness",
+
   "block.potionblocks.empty_potion_block": "Empty Potion Block",
   "block.potionblocks.speed_potion_block": "Block Of Speed",
   "block.potionblocks.slowness_potion_block": "Block Of Slowness",
