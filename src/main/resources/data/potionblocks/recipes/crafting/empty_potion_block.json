@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "#O#",
-    "MRM",
+    "#R#",
     "###"
   ],
   "key": {
@@ -11,9 +11,6 @@
     },
     "O": {
       "item": "minecraft:observer"
-    },
-    "M": {
-      "item": "minecraft:milk_bucket"
     },
     "R": {
       "item": "minecraft:redstone"
