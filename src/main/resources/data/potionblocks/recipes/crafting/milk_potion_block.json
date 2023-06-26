@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:milk_bucket"
+    },
+    {
+      "item": "potionblocks:empty_potion_block"
+    }
+  ],
+  "result": {
+    "item": "potionblocks:milk_potion_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "misc",
+  "pattern": [
+    "#G#",
+    "PEP",
+    "PBP"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:nether_wart"
+    },
+    "G": {
+      "item": "minecraft:ghast_tear"
+    },
+    "P": {
+      "item": "minecraft:potion"
+    },
+    "E": {
+      "item": "potionblocks:empty_potion_block"
+    },
+    "B": {
+      "item": "minecraft:blaze_powder"
+    }
+  },
+  "result": {
+    "item": "potionblocks:regen_potion_block",
+    "count": 1
+  }
+}
