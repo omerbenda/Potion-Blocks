@@ -3,14 +3,14 @@
   "group": "misc",
   "ingredients": [
     {
-      "item": "minecraft:fermented_spider_eye"
+      "item": "minecraft:milk_bucket"
     },
     {
-      "item": "potionblocks:speed_potion_block"
+      "item": "potionblocks:empty_potion_block"
     }
   ],
   "result": {
-    "item": "potionblocks:slowness_potion_block",
+    "item": "potionblocks:milk_potion_block",
     "count": 1
   }
 }
