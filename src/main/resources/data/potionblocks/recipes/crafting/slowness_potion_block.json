@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "misc",
   "ingredients": [
     {
       "item": "minecraft:fermented_spider_eye"
