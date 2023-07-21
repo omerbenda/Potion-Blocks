@@ -11,31 +11,22 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 
+import java.util.function.Supplier;
+
 public class PotionBlock extends Block {
-  private MobEffect effect;
+  private Supplier<MobEffect> effect;
   private int duration;
   private int amplifier;
 
-  public PotionBlock(MobEffect effect, int duration, int amplifier) {
+  public PotionBlock(Supplier<MobEffect> effect, int duration, int amplifier) {
     super(BlockBehaviour.Properties.of(Material.METAL).strength(6f).requiresCorrectToolForDrops());
     this.effect = effect;
     this.duration = duration;
     this.amplifier = amplifier;
   }
 
-  public PotionBlock(BlockBehaviour.Properties blockProperties, MobEffect effect, int duration) {
-    super(blockProperties);
-    this.effect = effect;
-    this.duration = duration;
-    this.amplifier = 0;
-  }
-
-  public PotionBlock(
-      BlockBehaviour.Properties blockProperties, MobEffect effect, int duration, int amplifier) {
-    super(blockProperties);
-    this.effect = effect;
-    this.duration = duration;
-    this.amplifier = amplifier;
+  public PotionBlock(MobEffect effect, int duration, int amplifier) {
+    this(() -> effect, duration, amplifier);
   }
 
   @Override
@@ -46,6 +37,6 @@ public class PotionBlock extends Block {
       return;
     }
 
-    livingEntity.addEffect(new MobEffectInstance(this.effect, this.duration, this.amplifier));
+    livingEntity.addEffect(new MobEffectInstance(this.effect.get(), this.duration, this.amplifier));
   }
 }

@@ -10,5 +10,9 @@ public class ModPotionRecipes {
   public static void registerRecipes() {
     BrewingRecipeRegistry.addRecipe(
         new ModBrewingRecipe(Potions.AWKWARD, Items.ENDER_EYE, ModPotions.BLINDNESS_POTION.get()));
+
+    BrewingRecipeRegistry.addRecipe(
+        new ModBrewingRecipe(
+            Potions.SLOW_FALLING, Items.FERMENTED_SPIDER_EYE, ModPotions.GRAVITY_POTION.get()));
   }
 }

@@ -1,6 +1,7 @@
 package com.potionblocks.potion;
 
 import com.potionblocks.PotionBlocks;
+import com.potionblocks.effect.ModEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.alchemy.Potion;
@@ -18,6 +19,11 @@ public class ModPotions {
       POTIONS.register(
           "blindness_potion",
           () -> new Potion(new MobEffectInstance(MobEffects.BLINDNESS, 200, 0)));
+
+  public static final RegistryObject<Potion> GRAVITY_POTION =
+      POTIONS.register(
+          "gravity_potion",
+          () -> new Potion(new MobEffectInstance(ModEffects.GRAVITY.get(), 600, 0)));
 
   public static void register(IEventBus eventBus) {
     POTIONS.register(eventBus);
