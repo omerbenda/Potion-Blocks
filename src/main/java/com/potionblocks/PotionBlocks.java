@@ -2,6 +2,7 @@ package com.potionblocks;
 
 import com.mojang.logging.LogUtils;
 import com.potionblocks.block.ModBlocks;
+import com.potionblocks.effect.ModEffects;
 import com.potionblocks.item.ModCreativeModeTabs;
 import com.potionblocks.item.ModItems;
 import com.potionblocks.potion.ModPotionRecipes;
@@ -20,13 +21,14 @@ import org.slf4j.Logger;
 @Mod(PotionBlocks.MOD_ID)
 public class PotionBlocks {
   public static final String MOD_ID = "potionblocks";
-  private static final Logger LOGGER = LogUtils.getLogger();
+  public static final Logger LOGGER = LogUtils.getLogger();
 
   public PotionBlocks() {
     IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
     ModItems.register(modEventBus);
     ModBlocks.register(modEventBus);
+    ModEffects.register(modEventBus);
     ModPotions.register(modEventBus);
 
     modEventBus.addListener(this::commonSetup);
