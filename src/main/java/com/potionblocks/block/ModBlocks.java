@@ -3,6 +3,7 @@ package com.potionblocks.block;
 import com.potionblocks.PotionBlocks;
 import com.potionblocks.block.custom.MilkPotionBlock;
 import com.potionblocks.block.custom.PotionBlock;
+import com.potionblocks.effect.ModEffects;
 import com.potionblocks.item.ModItems;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
@@ -52,6 +53,10 @@ public class ModBlocks {
 
   public static final RegistryObject<PotionBlock> JUMP_POTION_BLOCK =
       registerBlock("jump_potion_block", () -> new PotionBlock(MobEffects.JUMP, 600, 0));
+
+  public static final RegistryObject<PotionBlock> GRAVITY_POTION_BLOCK =
+      registerBlock(
+          "gravity_potion_block", () -> new PotionBlock(ModEffects.GRAVITY, 600, 0));
 
   private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
     RegistryObject<T> toReturn = BLOCKS.register(name, block);
