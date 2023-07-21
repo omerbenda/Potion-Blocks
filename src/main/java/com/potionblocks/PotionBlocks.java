@@ -26,9 +26,9 @@ public class PotionBlocks {
   public PotionBlocks() {
     IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+    ModEffects.register(modEventBus);
     ModItems.register(modEventBus);
     ModBlocks.register(modEventBus);
-    ModEffects.register(modEventBus);
     ModPotions.register(modEventBus);
 
     modEventBus.addListener(this::commonSetup);
@@ -51,6 +51,7 @@ public class PotionBlocks {
       event.accept(ModBlocks.REGEN_POTION_BLOCK);
       event.accept(ModBlocks.BLINDNESS_POTION_BLOCK);
       event.accept(ModBlocks.JUMP_POTION_BLOCK);
+      event.accept(ModBlocks.GRAVITY_POTION_BLOCK);
     }
   }
 
